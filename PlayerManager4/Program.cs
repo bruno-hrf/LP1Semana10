@@ -65,6 +65,20 @@ namespace PlayerManager1
                                 foreach (Player player in players) Console.WriteLine($"{player.Name} : {player.Score}");
                                 break;
                             }
+                            case 2:
+                            {
+                                CompareByName compare = new CompareByName(true);
+                                players.Sort(compare);
+                                foreach (Player player in players) Console.WriteLine($"{player.Name} : {player.Score}");
+                                break;
+                            }
+                            case 3:
+                            {
+                                CompareByName compare = new CompareByName(false);
+                                players.Sort(compare);
+                                foreach (Player player in players) Console.WriteLine($"{player.Name} : {player.Score}");
+                                break;
+                            }
                             
 
                         }                  
