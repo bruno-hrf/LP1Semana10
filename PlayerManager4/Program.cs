@@ -55,8 +55,19 @@ namespace PlayerManager1
                     }
 
                     case 2:
-                    {                       
-                        foreach (Player player in players) Console.WriteLine($"{player.Name} : {player.Score}");;
+                    {     
+                        Console.WriteLine("\n1-Ordenar  por Score, descrescente\n2-Ordenar por ordem alfabetica Nome\n3-Ordenar por ordem contra-alfabetica ");
+                        int opcao2 = Convert.ToInt32(Console.ReadLine());
+                        switch (opcao2)
+                        {
+                            case 1:
+                            {
+                                foreach (Player player in players) Console.WriteLine($"{player.Name} : {player.Score}");
+                                break;
+                            }
+                            
+
+                        }                  
                         break;
                     }
 
